@@ -1,129 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 		<title>Make Music</title>
 	</head>
 	<body>
 	
 		<!--NAV-->
-		<div>
-			<div>
-				<nav>
-					<ui>
-						<a href="#home" id="link"><li>Home</li></a>
-						<a href="#video"><li>Video</li></a>
-						<a href="#photos"><li>Photos</li></a>
-						<a href="#contact"><li>Appointments</li></a>
-					</ui>
-				</nav>
+		<div class="nav">
+			<div class="nav_container">
+				<ui class="nav_list">
+					<a href="#home" id="link"><li>Home</li></a>
+					<a href="#gallery_title"><li>Photos</li></a>
+					<a href="#video"><li>Video</li></a>
+					<a href="#contact"><li>Appointments</li></a>
+				</ui>
 			</div>
 		</div>
 		<!--END NAV-->
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<h1>Title Here.<h1>
-			</div>
-			<p>Title Description here.<p>
+			<h1>Make Music</h1>
+			<p>Equipment, Lessons, &amp; Community.</p>
 		</div>
 		<!--END HOME-->
-		<!--VIDEO-->
-		<div id="video">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Hyltln-KP0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<!--END VIDEO-->
+
 		<!--PHOTOS -->
-		<div id="photos"> <!--Container for all photos-->
-			<div> <!--Border for photo-->
-				<div><!--Photo-->
-				<img>
-					<div><!--Overlay for photo-->
+		<div id="gallery_title">
+			<h2>Gallery</h2>
+			<div class="gallery_container"> <!--Container for all photos-->
+				<div class="photo_container"> <!--Border for photo-->
+					<div class="photo"><!--Photo-->
+					<img src="./images/acoustic_guitar.jpg" alt="">
+						<div class="overlay"><!--Overlay for photo-->
+							<h4>Acoustic Guitar</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			
-			<div>
-				<div>
-				<img>
-					<div>
+				<div class="photo_container">
+					<div class="photo">
+					<img src="./images/electric_guitar.jpg" alt="">
+						<div class="overlay">
+							<h4>Electric Guitar</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			
-			<div>
-				<div>
-				<img>
-					<div>
+				<div class="photo_container">
+					<div class="photo">
+					<img src="./images/bass_guitar.jpg" alt="">
+						<div class="overlay">
+							<h4>Bass Guitar</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			
-			<div>
-				<div>
-				<img>
-					<div>
+				<div class="photo_container">
+					<div class="photo">
+					<img src="./images/keyboard.jpg" alt="">
+						<div class="overlay">
+							<h4>Keyboard</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			
-			<div>
-				<div>
-				<img>
-					<div>
+				<div class="photo_container">
+					<div class="photo">
+					<img src="./images/drumset.jpg" alt="">
+						<div class="overlay">
+							<h4>Drums</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div>
-				<div>
-				<img>
-					<div>
-					</div>
-				</div>
-			</div>
-			
-			<div>
-				<div>
-				<img>
-					<div>
-					</div>
-				</div>
-			</div>
-			
-			<div>
-				<div>
-				<img>
-					<div>
+
+				<div class="photo_container">
+					<div class="photo">
+					<img src="./images/microphone.jpg" alt="">
+						<div class="overlay">
+							<h4>Singing</h4>
+							<p>Stop by for lessons, equipment,</p>
+							<p>or making music!</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--END PHOTOS-->
-		<!--CONTACT-->
-		<div id="contact">
-			<div>
-				<h2>Contact Us</h2>
-				<h4>Feel free to reach out to us.<br>Whether for a lesson, tour or if you have any questions.</h4>
+
+		<!--VIDEO-->
+		<div id="video_title">
+			<h2>Video</h2>
+			<div id="video">
+				<iframe src="https://www.youtube.com/embed/Hyltln-KP0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		<p>Please enter your contact info below</p>
-			<div>
-				<form method="post" action="">
-					<input class="info" type="text" value="First Name">
-					<input class="info" type="text" value="Last Name">
-					<input class="info" type="email" value="Email Address">
-					<input class="info" type="phone number" value="Phone Number">
-					<textarea class="info" name="message" rows="5" cols="50">How can we help you?</textarea>
-					<button type="submit" onclick="alert('Message submitted.')">Submit</button>
-				</form>
-			</div>
-			<p>Terms&nbsp;&amp;&nbsp;Conditions<p>
 		</div>
+		<!--END VIDEO-->
+
+		<!--CONTACT-->
+		<section id="contact">
+			<div class="contact_container">
+				<div class="heading-padding">
+					<h2 class="heading">Contact Us</h2>
+					<h4 class="sub-heading">Feel free to reach out to us.</h4>
+					<h4 class="sub-heading">Whether for lessons, a tour, or if you have any questions.</h4>
+					<p class="sub-heading">Please enter your contact info below.</p>
+					<div class="form-contact">
+						<form method="post" action="">
+							<input class="info" type="text" value="" placeholder="First Name">
+							<input class="info" type="text" value="" placeholder="Last Name">
+							<input class="info" type="email" value="" placeholder="Email Address">
+							<input class="info" type="phone number" value="" placeholder="Phone Number">
+							<textarea class="info" name="message" rows="5" cols="70" placeholder="How can we help you?"></textarea>
+						</form>
+					</div>
+					<button id="submit" type="submit" onclick="alert('Submitted.')">Submit</button>
+					<div id="spacer">
+						<p id="terms">Terms&nbsp;&amp;&nbsp;Conditions<p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!--END CONTACT-->
 		<!--FOOTER-->
-		<footer>
-			<h5>1(800)555-1234</h5>
-			<p>contact@makemusic.com</p>
+		<footer id="footer_container">
+			<div id="footer">
+				<p>1(800)555-1234 &nbsp;|&nbsp;www.makemusic.com&nbsp;|&nbsp; &copy; 2022</p>
+			</div>
 		</footer>
 	</body>
 </html>

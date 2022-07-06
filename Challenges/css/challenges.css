@@ -1,0 +1,192 @@
+/*----------Styling for Hover Challenge----------*/
+p:hover {
+    color: white;
+}
+/*----END---Styling for Hover Challenge----------*/
+
+/*----------Styling for Nav Challenge----------*/
+.nav_container {
+    overflow: hidden;
+    background-color: rgba(39, 39, 39, 0.70);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav_container a {
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav_container a:hover {
+    background-color: #393939;
+}
+/*---END----Styling for Nav Challenge----------*/
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------Styling for Image Filter Challenge----------*/
+.mountain_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    filter: contrast(150%);
+    border-radius: 25px;
+    position: relative;
+}
+
+.mountain_image:hover {
+    filter: contrast(100%);
+}
+/*-----END--Styling for Image Filter Challenge----------*/
+
+/*----------Styling for Table Challenge----------*/
+.square_table {
+    margin: 50px 50%;
+    border: 4px solid #000;
+    font-size: x-large;
+    width: 100px;
+}
+
+.square_table th,td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.square_table th {
+    background-color: rgba(39, 39, 39, 0.712);
+}
+/*----END---Styling for Table Challenge----------*/
+
+/*-------Styling for Column Challenge---------*/
+#column_one {
+    background-color: rgb(0, 63, 238);
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+}
+
+#column_two {
+    background-color: rgb(2, 38, 136);
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    color: #acacac;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*----END---Styling for Column Challenge------*/
+
+/*----------Image Styling for Overlay Transition---------*/
+.image_container {
+    position: relative;
+    width: 50%;
+    margin: 25px 25%;
+}
+
+.image_container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image_container:hover .overlay {
+    opacity: 1;
+}
+/*---END----Image Styling for Overlay Transition---------*/
+
+/*-------Overlay for Video and Image challenge------------*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(32, 30, 150);
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*---END----Overlay for Video and Image challenge---------*/
+
+/*----------Styling for Video Challenge----------*/
+.video video {
+    width: 80%;
+    height: auto;
+    margin: 25px 10%;
+}
+/*----END---Styling for Video Challenge----------*/
+
+/*----------Video Styling for Overlay Transition---------*/
+.video_container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 25px 10%;
+}
+
+.video_container video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.video_container:hover .overlay {
+    opacity: 1;
+}
+/*---END----Video Styling for Overlay Transition---------*/
+
+/*----------Footer Styling---------*/
+footer {
+    display: block;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*---END----Footer Styling---------*/

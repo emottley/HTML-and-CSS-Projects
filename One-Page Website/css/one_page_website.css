@@ -9,10 +9,6 @@ html {
     background-size: cover;
 }
 
-body {
-
-}
-
 /*---------NAV STYLING-----------*/
 
 .nav {
@@ -96,79 +92,6 @@ body {
 
 #home {
     margin-bottom: 700px;
-}
-
-/*----------GALLERY STYLING----------*/
-
-#gallery_title {
-    color: #fff;
-    text-align: center;
-}
-
-#gallery_title h2 {
-    margin-bottom: -70px;
-    text-decoration: underline;
-    text-shadow: 0.5px 0.5px #000, -0.5px -0.5px #000, -0.5px 0.5px #000, 0.5px -0.5px #000;
-}
-
-.gallery_container {
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 90px 30px;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
-}
-
-.photo {
-    position: relative;
-    line-height: 0;
-    margin-bottom: 2em;
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #000;
-    background-color: #000;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
-}
-
-.photo_container {
-    text-align: center;
-    margin: 40px auto;
-    width: auto;
-    height: auto;
-
-}
-
-.photo_container img {
-    width: auto;
-    height: auto;
-    max-height: 450px;
-    min-width: 600px;
-}
-
-/*-----------GALLERY ANIMATION-----------*/
-
-.overlay {
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    transition: opactiy 0.3s;
-    opacity: 0;
-}
-
-.overlay:hover {
-    opacity: 1;
 }
 
 /*------------VIDEO STYLING-------------*/
@@ -282,3 +205,141 @@ iframe {
     border: 2px #000;
     float: right;
 }
+
+.column img {
+    margin: 0 100px 130px;
+}
+
+.row h2 {
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px #000, -0.5px -0.5px #000, -0.5px 0.5px #000, 0.5px -0.5px #000;
+}
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 24%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+    max-width: 250px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.58);
+  }

@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+		<script src="./JS/one_page_website.js" defer></script>
 		<title>Make Music</title>
 	</head>
 	<body>
@@ -27,78 +28,75 @@
 		</div>
 		<!--END HOME-->
 
-		<!--PHOTOS -->
-		<div id="gallery_title">
+		<!-- Images used to open the lightbox -->
+		<div class="row">
 			<h2>Gallery</h2>
-			<div class="gallery_container"> <!--Container for all photos-->
-				<div class="photo_container"> <!--Border for photo-->
-					<div class="photo"><!--Photo-->
-					<img src="./images/acoustic_guitar.jpg" alt="">
-						<div class="overlay"><!--Overlay for photo-->
-							<h4>Acoustic Guitar</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="photo_container">
-					<div class="photo">
-					<img src="./images/electric_guitar.jpg" alt="">
-						<div class="overlay">
-							<h4>Electric Guitar</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="photo_container">
-					<div class="photo">
-					<img src="./images/bass_guitar.jpg" alt="">
-						<div class="overlay">
-							<h4>Bass Guitar</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="photo_container">
-					<div class="photo">
-					<img src="./images/keyboard.jpg" alt="">
-						<div class="overlay">
-							<h4>Keyboard</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="photo_container">
-					<div class="photo">
-					<img src="./images/drumset.jpg" alt="">
-						<div class="overlay">
-							<h4>Drums</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="photo_container">
-					<div class="photo">
-					<img src="./images/microphone.jpg" alt="">
-						<div class="overlay">
-							<h4>Singing</h4>
-							<p>Stop by for lessons, equipment,</p>
-							<p>or making music!</p>
-						</div>
-					</div>
-				</div>
+			<div class="column">
+				<img src="./images/acoustic_guitar_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/electric_guitar_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/drumset_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/bass_guitar_thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
 			</div>
 		</div>
-		<!--END PHOTOS-->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+			
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./images/acoustic_guitar_full.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./images/electric_guitar_full.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./images/drumset_full.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./images/bass_guitar_full.jpg" style="width:100%">
+			  </div>
+		  
+			  <!-- Next/previous controls -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <!-- Caption text -->
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+			  <!-- Thumbnail image controls -->
+			  <div class="column">
+				<img class="demo" src="./images/acoustic_guitar_thumb.jpg" onclick="currentSlide(1)" alt="Acoustic Guitar">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./images/electric_guitar_thumb.jpg" onclick="currentSlide(2)" alt="Electric Guitar">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./images/drumset_thumb.jpg" onclick="currentSlide(3)" alt="Drumkit">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./images/bass_guitar_thumb.jpg" onclick="currentSlide(4)" alt="Bass Guitar">
+			  </div>
+			</div>
+		  </div>
 
 		<!--VIDEO-->
 		<div id="video_title">
